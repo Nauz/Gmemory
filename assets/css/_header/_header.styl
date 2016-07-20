@@ -1,0 +1,95 @@
+#header-site
+	height 100%
+	background #58303F url(/img/header.svg) no-repeat
+	background-size: contain
+	lost-flex-container column
+
+.header-top
+	lost-offset -2/70 column
+	opacity 0.8
+	background-color #482030
+	padding: 12px 0;
+	
+.logoContainer
+	lost-column 2/12
+	lost-offset 3/12
+
+#logo-site
+	display flex
+	align-items center
+
+#logo-pic
+	display: inline-block
+
+
+.main-nav
+	lost-column 7/12
+	font-family "Days One"
+	color white
+	font-size 0.875rem
+	font-weight 700
+	text-transform uppercase
+	background-color #482030
+	ul
+		display: flex;
+		width: 100%;
+		justify-content: space-between
+		height 100% 
+		align-items center
+		li
+			all initial
+			font-family "Days One"
+			a
+				all initial
+				color white
+				font-family "Days One"
+				font-size 14px
+				font-weight 700
+				text-transform uppercase
+				&:hover
+					text-decoration underline
+
+#utp
+	lost-flex-container: column;	
+	lost-row 10/40 0
+	lost-offset -15/40 column
+	background #4b2333
+	color #fff
+
+
+.utp_descr
+	font-size 1.125rem
+	font-weight 400
+	line-height 1.5rem
+	font-family "Open Sans", Verdana, Tahoma, Arial, sans-serif
+
+.utp_buttons
+	display: flex
+	width 100%
+	justify-content center
+	margin 40px 0 70px 0
+
+.al-btn
+	all initial
+	border-radius 10px
+	padding 18px 28px
+	color white
+	font-family "Days One"
+	font-size 18px
+	font-weight 700
+	text-transform uppercase
+
+.al-btn_learn-more
+	border 2px solid #ea2c4e
+.al-btn_call_back
+	border 2px solid #5fc79a
+
+.al-utp_buttons-between
+	display block
+	color white
+	font-family Georgia
+	font-size 36px
+	font-style italic
+	margin 0 12px
+
+@import '_slider'
