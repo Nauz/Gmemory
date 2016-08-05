@@ -1,35 +1,60 @@
 #header-site
-	height 100%
-	background #58303F url(/img/header.svg) no-repeat
 	background-size: contain
 	lost-flex-container column
+	height 101%
 
+$min-font = 14px
+$max-font = 30px
 .header-top
-	lost-offset -2/70 column
-	opacity 0.8
-	background-color #482030
-	padding: 12px 0;
-	
-.logoContainer
-	lost-column 2/12
-	lost-offset 3/12
+	box-sizing border-box
+	background-color #1b2b34
+	lost-row 2/12
+	color #fff
+	t-p()
+	// padding vr-block(0.5) 0
+	.logoContainer
+		lost-column 4/12
+		lost-offset 1/12
+		lost-align middle-left
+		
+		#logo-site
+			lost-flex-container column
+			box-sizing border-box
+			padding-top vr-block(0.25)
+			display flex
+			// align-items center
+			text-decoration none
+			font-family: 'Days One'
+			font-weight 700
+			color #fbd07c
+			// lost-align: middle-left
+			height 100% 
+			.span-logo
+				text-align left		
+			// .descr-logo
+			// 	lost-row 1/2
 
-#logo-site
-	display flex
-	align-items center
+$min-font = 10px
+$max-font = 16px
+.descr-logo
+	t-p()
+	color #fbd07c
 
-#logo-pic
-	display: inline-block
 
 
+$min-font = 14px
+$max-font = 36px
 .main-nav
+	lost-flex-container column
+	t-p()
 	lost-column 7/12
 	font-family "Days One"
-	color white
-	font-size 0.875rem
+	color #fbd07c
 	font-weight 700
-	text-transform uppercase
-	background-color #482030
+	text-align right
+	// text-transform uppercase
+	// lost-align right
+	// background-color #482030
 	ul
 		display: flex;
 		width: 100%;
@@ -41,55 +66,91 @@
 			font-family "Days One"
 			a
 				all initial
-				color white
+				color #fff
 				font-family "Days One"
-				font-size 14px
 				font-weight 700
 				text-transform uppercase
 				&:hover
 					text-decoration underline
+	.h_tel
+		font-weight: 700
 
+$min-font = 10px
+$max-font = 16px
+.call-free
+	display block
+	t-p()
+	color #fbd07c
+		
+$min-font = 14px
+$max-font = 36px
+$line-height-ratio  = $golden
 #utp
-	lost-flex-container: column;	
-	lost-row 10/40 0
-	lost-offset -15/40 column
-	background #4b2333
-	color #fff
+	lost-flex-container: column;
+	box-sizing border-box
+	// padding vr-block(1) 
+	lost-row 10/12
+	background #1b2b34
+	color #fbd07c
+	// t-p()
+	.utp_youtube
+		lost-column 6/12 0 0
+		lost-offset 1/12 0 0
+		.video-container
+			box-sizing border-box
+			padding 10px
+			min-width 100%
+			height 100% 
+			border 3px solid #666
+			position:relative;
+			padding-bottom:56.25%;
+			padding-top:30px;
+			height:0;
+			overflow:hidden;
+			iframe
+			object
+			embed
+				position:absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+	
+	.utp_text
+		lost-column 5/12 0 0
+		box-sizing border-box
+		color #fbd07c
+		.utp_header
+			t-p()
+			text-align left
+			font-weight 700
+			color #f99157
 
-
+$min-font = 14px
+$max-font = 36px
+.utp_header
+	t-p()
+	// font-size: 36px;
+		
+$line-height-ratio  = $golden
+$min-font = 10px
+$max-font = 20px
 .utp_descr
-	font-size 1.125rem
-	font-weight 400
-	line-height 1.5rem
 	font-family "Open Sans", Verdana, Tahoma, Arial, sans-serif
-
+	// t-p()
+	color #fbd07c
+	font-size: 18px
+	
 .utp_buttons
 	display: flex
 	width 100%
 	justify-content center
 	margin 40px 0 70px 0
 
-.al-btn
-	all initial
-	border-radius 10px
-	padding 18px 28px
-	color white
-	font-family "Days One"
-	font-size 18px
-	font-weight 700
-	text-transform uppercase
-
-.al-btn_learn-more
-	border 2px solid #ea2c4e
-.al-btn_call_back
-	border 2px solid #5fc79a
-
-.al-utp_buttons-between
-	display block
-	color white
-	font-family Georgia
-	font-size 36px
-	font-style italic
-	margin 0 12px
+// $min-font = 12px
+// $max-font = 30px
+// .tel-container
+// 	lost-align middle
+// 	t-p()
 
 @import '_slider'

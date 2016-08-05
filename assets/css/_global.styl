@@ -1,16 +1,23 @@
 @lost flexbox flex
 
+@import 'typographic'
+typographic()
+
+$min-font = 8px
+$max-font = 15px
+
 html
 	all initial
-	font-size 16px 
-	font-size: responsive;
-	min-font-size: 16px
+	height 100% 
 
 body
 	all initial
-	lost-utility edit
-	background #58303F
+	// lost-utility edit
+	t-p()
+	height 100%
+	background #fff
 	font-family $opensans
+	color #fbd07c
 	
 
 // .cf
@@ -34,7 +41,7 @@ body
 	z-index 100
 
 h1, h2, h3
-	color white
+	color #666
 	font-family "Days One"
 	font-size 2.4em
 	font-weight 700
@@ -54,4 +61,31 @@ h3
 .g-ftb
 	lost-flex-container: column;
 	lost-column 3/12 0 0
-	
+
+.g-c-uw
+	lost-flex-container: column;
+	width 100%
+	justify-content center
+
+.g-btn
+	all initial
+	border-radius 10px
+	padding 18px 28px
+	color white
+	font-family "Days One"
+	font-size 18px
+	font-weight 700
+	text-transform uppercase
+
+.g-btn_learn-more
+	border 2px solid #ea2c4e
+.g-btn_call_back
+	border 2px solid #5fc79a
+
+.g-utp_buttons-between
+	display block
+	color white
+	font-family Georgia
+	font-size 36px
+	font-style italic
+	margin 0 12px

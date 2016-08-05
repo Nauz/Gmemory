@@ -8,6 +8,7 @@ accord          = require 'accord'
 postcss         = accord.load 'postcss'
 rucksack        = require 'rucksack-css'
 lost            = require 'lost'
+typographic     = require 'typographic'
 font_magician   = require 'postcss-font-magician'
 postcss_modules = require 'postcss-modules'
 postcss_initial = require 'postcss-initial'
@@ -24,7 +25,7 @@ module.exports =
   ]
 
   stylus:
-    use: [axis(), rupture(), autoprefixer()]
+    use: [axis(), rupture(), typographic(), autoprefixer()]
     sourcemap: true
 
   'coffee-script':
