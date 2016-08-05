@@ -1,3 +1,4 @@
+@lost gutter 30px;
 @lost flexbox flex
 
 @import 'typographic'
@@ -67,15 +68,20 @@ h3
 	width 100%
 	justify-content center
 
+$min-font = 10px
+$max-font = 18px
 .g-btn
 	all initial
 	border-radius 10px
-	padding 18px 28px
-	color white
 	font-family "Days One"
-	font-size 18px
+	t-p()
+	// padding 18px 28px
+	padding vr-block(0.5)
+	color white
+	margin-top vr-block(1) 
 	font-weight 700
 	text-transform uppercase
+	text-align center
 
 .g-btn_learn-more
 	border 2px solid #ea2c4e
