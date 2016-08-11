@@ -20,7 +20,7 @@ module.exports =
   ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf', '.npmrc', 'views/*.sublime-project']
 
   extensions: [
-    js_pipeline(files: 'assets/js/*.coffee'),
+    js_pipeline(files: 'assets/js/**', out: 'js/scripts.js'),
     css_pipeline(files: 'assets/css/*.styl')
   ]
 

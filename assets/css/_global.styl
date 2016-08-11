@@ -4,7 +4,7 @@
 typographic()
 
 $min-font = 8px
-$max-font = 15px
+$max-font = 16px
 
 html
 	all initial
@@ -19,8 +19,6 @@ body
 	font-family $opensans
 	color #fbd07c	
 
-// .cf
-// 	lost-utility clearfix
 .g-center
 	lost-center: 1140px 15px
 
@@ -39,6 +37,11 @@ body
 	position: relative
 	z-index 100
 
+img
+	display block
+	max-width 100%
+	height auto
+
 h1, h2, h3
 	color #666
 	font-family "Days One"
@@ -48,32 +51,37 @@ h1, h2, h3
 	text-align center
 
 h2
-	color #b9b9b9
-	font-size 30px
-	margin 71px auto 57px auto
+	color #1b2b34
+	// font-size 30px
+	// t-p()
+	
+	// margin 71px auto 57px auto
 	text-align center
 	
 h3
 	font-size 18px
 	text-align left
 	
-.g-ftb
+.g-column
 	lost-flex-container: column;
 	lost-column 3/12 0 0
+	// lost-row 1 0 40px
+	box-sizing border-box
 
 .g-c-uw
 	lost-flex-container: column;
 	width 100%
 	justify-content center
+	// align-items flex-end
 
 $min-font = 10px
 $max-font = 18px
 .g-btn
 	all initial
+	border 3px solid #fff
 	border-radius 10px
 	font-family "Days One"
 	t-p()
-	// padding 18px 28px
 	padding vr-block(0.5)
 	color white
 	margin-top vr-block(1) 
