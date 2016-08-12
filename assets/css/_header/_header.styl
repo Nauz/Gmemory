@@ -2,7 +2,7 @@
 	background-size: contain
 	lost-flex-container column
 	box-sizing border-box
-	min-height 100%
+	// min-height 100%
 	background-color #1b2b34
 
 $min-font = 14px
@@ -54,18 +54,6 @@ $max-font = 30px
 	font-weight 700
 	text-align right
 	justify-content flex-end
-	.call-to-us
-		display: block
-		margin-top vr-block(0.68) 
-		margin-bottom: vr-block(0.3)
-		t-p()
-		color #fbd07c
-		font-weight: 700
-		.h-tel
-			all initial
-			t-p()
-			font-size: calc($max-font - 10px)
-
 	ul
 		display: flex;
 		width: 100%;
@@ -84,7 +72,10 @@ $max-font = 30px
 				&:hover
 					text-decoration underline
 	.h_tel
-		font-weight: 300
+		t-p()
+		color #fbd07c
+		font-weight: 700
+		font-size: $max-font / $golden
 		margin-top vr-block(0.5)
 	.g-c-uw
 		align-items flex-end
@@ -103,6 +94,22 @@ $max-font = 18px
 	text-transform uppercase
 	justify-content center
 	width vr-block(17)
+
+$min-font = 10px
+$max-font = 22px
+.call-to-us
+	t-p()
+	display: block
+	margin-top vr-block(0.68) 
+	margin-bottom: vr-block(0.3)
+	color #fbd07c
+	font-weight: 300
+
+$min-font = 10px
+$max-font = 28px
+.h-tel
+	t-p()
+	// font-size: calc($max-font)
 	
 		
 $min-font = 14px

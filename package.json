@@ -7,6 +7,7 @@
     "axis": "0.6.x",
     "coffee-script": "1.x",
     "css-pipeline": "0.3.x",
+    "dynamic-content": "^0.3.0",
     "jade": "1.x",
     "js-pipeline": "0.2.x",
     "jstransformer-marked": "1.x",
