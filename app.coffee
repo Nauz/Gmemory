@@ -13,6 +13,7 @@ font_magician   = require 'postcss-font-magician'
 postcss_modules = require 'postcss-modules'
 postcss_initial = require 'postcss-initial'
 postcss_autoreset = require 'postcss-autoreset'
+inline_svg      = require 'postcss-inline-svg'
 cssnano         = require 'cssnano'
 dynamic         = require 'dynamic-content'
 
@@ -48,8 +49,13 @@ module.exports =
         rulesMatcher: 'suit'
         }),
       postcss_initial(),
+      inline_svg({
+        path: 'assets/img/'
+        }),
+      # cssnano({
+      #   core: false
+      #   })
       cssnano({
         core: false
         })
-
     ]

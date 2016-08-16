@@ -14,7 +14,7 @@ html
 
 body
 	all initial
-	// lost-utility edit
+	lost-utility edit
 	t-p()
 	height 100%
 	background #fff
@@ -91,12 +91,25 @@ $max-font = 18px
 	text-transform uppercase
 	text-align center
 
-.g-btn_learn-more
-	border 5px solid #fbd07c
-	background #3D9970
-	color #fbd07c
+.g-btn_learn-more	
+	position: relative
 	t-p()
 	button: green 'large'
+	.hand-icons
+		lost-flex-container column
+		display: block
+		position: absolute
+		size vr-block(1.3) vr-block(1.2)
+		top vr-block(0.1)
+		right vr-block(2.5)
+		background svg-load('hand-tap-icon.svg', fill: #000, stroke: #fff) no-repeat
+		background-size: contain		
+	&:hover
+		.hand-icons
+			background svg-load('hand-press-icon.svg', fill: #fff) no-repeat
+			background-size: contain
+			lost-flex-container column			
+		
 	
 .g-btn_call_back
 	border 2px solid #5fc79a
@@ -108,3 +121,10 @@ $max-font = 18px
 	font-size 36px
 	font-style italic
 	margin 0 12px
+
+.g-arrow-up
+	background svg-load('arrow-up.svg')
+	size vr-block(0.6)
+	display: inline-block
+	background-size: contain
+	vertical-align text-top

@@ -13,34 +13,39 @@ $max-font = 36px
 	lost-row 3/12 vr-block(0.5) 0
 	color #fff
 	t-p()
-	// padding vr-block(0.5) 0
+	// padding vr-block(0.5)
+	// +below()
+	+mobile()
+		lost-row 1 0 0
+
 	.logoContainer
-		lost-column 4/12
-		lost-offset 1/12
-		lost-align middle-left		
+		lost-column 5/12
+		// lost-offset 1/12 0 0
+		lost-align middle-left
+		+mobile()
+			lost-column 12/12
+			lost-row 1
+			text-align center
 		#logo-site
 			lost-flex-container column
 			box-sizing border-box
 			padding-top vr-block(0.5)
 			display flex
-			// align-items center
 			text-decoration none
 			font-family: 'Days One'
 			font-weight 300
 			color #fbd07c
-			// lost-align: middle-left
-			height 100% 
+			height 100%
+			// +mobile()
+			// 	lost-align middle-center
 			.span-logo
-				text-align left		
-			// .descr-logo
-			// 	lost-row 1/2
+				text-align left
 
 $min-font = 10px
 $max-font = 20px
 .descr-logo
 	t-p()
 	color #fbd07c
-
 
 
 $min-font = 14px
@@ -54,6 +59,9 @@ $max-font = 30px
 	font-weight 700
 	text-align right
 	justify-content flex-end
+	+mobile()
+		lost-column 12/12
+		lost-row 1 1
 	ul
 		display: flex;
 		width: 100%;
@@ -147,7 +155,8 @@ $line-height-ratio  = $golden
 				left:0;
 				width:100%;
 				height:100%;
-	
+			
+
 	.utp_text
 		lost-column 5/12 0 0
 		box-sizing border-box
@@ -162,31 +171,24 @@ $line-height-ratio  = $golden
 			margin-bottom vr-block(0.5) 
 			span
 				color #eb606b
-			
+
+$line-height-ratio  = $aug-fourth
+$min-font = 10px
+$max-font = 26px
+.look-our-video
+	margin-top: vr-block(0.5)
+	t-p()
+	color #fcd793
+	text-align center		
 
 $line-height-ratio  = 0.5
 $min-font = 8px
 $max-font = 24px
 .utp_header
 	t-p()
-	// font-size: 36px;
 
 
-
-// $min-font = 12px
-// $max-font = 30px
-// .h-tel
-
-// 	font-size: ($max-font * 3)
-	
-
-// .h-tel
-// 	// margin-bottom: vr-block(0.5)
-// 	span
-// 		font-size 14px 	
-
-
-$line-height-ratio  = 1.3
+$line-height-ratio = 1.3
 $min-font = 10px
 $max-font = 20px
 .utp_descr
@@ -201,11 +203,5 @@ $max-font = 20px
 	width 100%
 	justify-content center
 	margin 40px 0 70px 0
-
-// $min-font = 12px
-// $max-font = 30px
-// .tel-container
-// 	lost-align middle
-// 	t-p()
 
 @import '_slider'

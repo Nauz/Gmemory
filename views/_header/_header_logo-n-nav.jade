@@ -1,16 +1,9 @@
 .header-top
 	.g-center
-		.logoContainer
+		.g-column.logoContainer
 			a#logo-site(href="#")
 				span.span-logo Glass memory
 				span.descr-logo Производство памятников из стекла
-		.main-nav
+		.g-column.main-nav
 			.call-to-us Позвоните нам: <span class="lptracker_phone h_tel">+7 (800) 333-84-17</span>
-			//- span.lptracker_phone.h_tel 
-			.g-c-uw: a.call-free(href="#lptracker") Или Закажите обратый звонок
-
-
-//- .main-phone-number
-//- 	.g-center
-//- 		.tel-container 
-//- 			strong 8-800-777-77-77
+			.g-c-uw: a.call-free(href="#lptracker", onclick="lstats.reachGoal('Header_callback_button'); return true;") Или Закажите обратый звонок <span class="hand-icons">&nbsp;</span>
